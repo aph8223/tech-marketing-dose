@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
+  <!-- Option 2 Updated: Pill capsule with AI pattern -->
+  <defs>
+    <linearGradient id="pillGradLeft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e94560"/>
+      <stop offset="100%" style="stop-color:#c23152"/>
+    </linearGradient>
+    <linearGradient id="pillGradRight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#533483"/>
+      <stop offset="100%" style="stop-color:#3d2066"/>
+    </linearGradient>
+    <linearGradient id="underlineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e94560"/>
+      <stop offset="100%" style="stop-color:#533483"/>
+    </linearGradient>
+  </defs>
+  <!-- Pill capsule - left half (red) -->
+  <path d="M 27 28 C 27 28 27 20 35 20 L 35 20 C 43 20 43 28 43 28 L 43 48 L 27 48 Z" fill="url(#pillGradLeft)"/>
+  <!-- Pill capsule - right half (purple) -->
+  <path d="M 27 48 L 43 48 L 43 68 C 43 68 43 76 35 76 L 35 76 C 27 76 27 68 27 68 Z" fill="url(#pillGradRight)"/>
+  <!-- Pill divider line -->
+  <line x1="26" y1="48" x2="44" y2="48" stroke="rgba(255,255,255,0.5)" stroke-width="1"/>
+  <!-- Pill highlight/shine -->
+  <path d="M 30 24 C 30 24 30 22 33 22 L 33 22 C 33 22 31 22 31 24 L 31 38 C 31 38 30 38 30 36 Z" fill="rgba(255,255,255,0.3)"/>
+  <!-- AI circuit pattern on pill -->
+  <circle cx="35" cy="34" r="3" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="1.2"/>
+  <circle cx="35" cy="34" r="1.2" fill="rgba(255,255,255,0.9)"/>
+  <circle cx="35" cy="62" r="3" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="1.2"/>
+  <circle cx="35" cy="62" r="1.2" fill="rgba(255,255,255,0.9)"/>
+  <!-- Connection nodes -->
+  <line x1="35" y1="37" x2="35" y2="48" stroke="rgba(255,255,255,0.5)" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="35" y1="48" x2="35" y2="59" stroke="rgba(255,255,255,0.5)" stroke-width="1" stroke-dasharray="2,2"/>
+  <circle cx="30" cy="41" r="1.5" fill="rgba(255,255,255,0.6)"/>
+  <circle cx="40" cy="41" r="1.5" fill="rgba(255,255,255,0.6)"/>
+  <circle cx="30" cy="55" r="1.5" fill="rgba(255,255,255,0.6)"/>
+  <circle cx="40" cy="55" r="1.5" fill="rgba(255,255,255,0.6)"/>
+  <line x1="30" y1="41" x2="35" y2="34" stroke="rgba(255,255,255,0.4)" stroke-width="0.8"/>
+  <line x1="40" y1="41" x2="35" y2="34" stroke="rgba(255,255,255,0.4)" stroke-width="0.8"/>
+  <line x1="30" y1="55" x2="35" y2="62" stroke="rgba(255,255,255,0.4)" stroke-width="0.8"/>
+  <line x1="40" y1="55" x2="35" y2="62" stroke="rgba(255,255,255,0.4)" stroke-width="0.8"/>
+  <!-- Text - same layout as option 2 -->
+  <text x="60" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#888" letter-spacing="3">TECH MARKETING</text>
+  <text x="60" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="34" font-weight="800" fill="#1a1a2e">Dose</text>
+  <!-- Underline accent -->
+  <rect x="60" y="76" width="95" height="3" rx="1.5" fill="url(#underlineGrad)"/>
+  <!-- Tagline -->
+  <text x="165" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="500" fill="#888">for AI News</text>
+</svg>

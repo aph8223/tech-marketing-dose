@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 100" width="420" height="100">
+  <defs>
+    <linearGradient id="pillTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b8a"/>
+      <stop offset="100%" style="stop-color:#e94560"/>
+    </linearGradient>
+    <linearGradient id="pillBottom" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#4f21a1"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b8a"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Pill capsule - minimal, rounded, slightly tilted for dynamism -->
+  <g transform="rotate(-12, 38, 50)">
+    <!-- Top half -->
+    <rect x="24" y="18" width="28" height="32" rx="14" ry="14" fill="url(#pillTop)"/>
+    <rect x="24" y="34" width="28" height="16" fill="url(#pillTop)"/>
+    <!-- Bottom half -->
+    <rect x="24" y="50" width="28" height="16" fill="url(#pillBottom)"/>
+    <rect x="24" y="50" width="28" height="32" rx="14" ry="14" fill="url(#pillBottom)"/>
+    <!-- Clean divider -->
+    <rect x="24" y="49" width="28" height="2" fill="rgba(255,255,255,0.25)"/>
+    <!-- Minimal AI spark - single clean node cluster -->
+    <circle cx="38" cy="36" r="2.5" fill="rgba(255,255,255,0.95)"/>
+    <circle cx="31" cy="42" r="1.5" fill="rgba(255,255,255,0.7)"/>
+    <circle cx="45" cy="42" r="1.5" fill="rgba(255,255,255,0.7)"/>
+    <line x1="38" y1="36" x2="31" y2="42" stroke="rgba(255,255,255,0.5)" stroke-width="1" stroke-linecap="round"/>
+    <line x1="38" y1="36" x2="45" y2="42" stroke="rgba(255,255,255,0.5)" stroke-width="1" stroke-linecap="round"/>
+    <circle cx="38" cy="64" r="2.5" fill="rgba(255,255,255,0.95)"/>
+    <circle cx="31" cy="58" r="1.5" fill="rgba(255,255,255,0.7)"/>
+    <circle cx="45" cy="58" r="1.5" fill="rgba(255,255,255,0.7)"/>
+    <line x1="38" y1="64" x2="31" y2="58" stroke="rgba(255,255,255,0.5)" stroke-width="1" stroke-linecap="round"/>
+    <line x1="38" y1="64" x2="45" y2="58" stroke="rgba(255,255,255,0.5)" stroke-width="1" stroke-linecap="round"/>
+  </g>
+
+  <!-- Subtle glow behind pill -->
+  <ellipse cx="38" cy="80" rx="16" ry="4" fill="#7c3aed" opacity="0.12"/>
+
+  <!-- Text - modern geometric sans feel -->
+  <text x="78" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-size="12.5" font-weight="500" fill="#94a3b8" letter-spacing="4">TECH MARKETING</text>
+  <text x="78" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-size="36" font-weight="800" fill="#0f172a" letter-spacing="-0.5">Dose</text>
+
+  <!-- Gradient pill-shaped badge instead of underline -->
+  <rect x="78" y="78" width="72" height="18" rx="9" fill="url(#accent)"/>
+  <text x="89" y="91" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-size="9" font-weight="700" fill="white" letter-spacing="1.5">AI NEWS</text>
+</svg>

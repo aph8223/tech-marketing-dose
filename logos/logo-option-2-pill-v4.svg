@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 100" width="420" height="100">
+  <defs>
+    <linearGradient id="pillTopV4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="pillBottomV4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6d28d9"/>
+      <stop offset="100%" style="stop-color:#4c1d95"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Bouncy pill - rounder, tilted, playful -->
+  <g transform="rotate(-20, 40, 50)">
+    <!-- Pill body - all purple -->
+    <rect x="22" y="14" width="36" height="36" rx="18" ry="18" fill="url(#pillTopV4)"/>
+    <rect x="22" y="32" width="36" height="20" fill="url(#pillTopV4)"/>
+    <rect x="22" y="50" width="36" height="20" fill="url(#pillBottomV4)"/>
+    <rect x="22" y="50" width="36" height="36" rx="18" ry="18" fill="url(#pillBottomV4)"/>
+    <!-- Fun dashed divider -->
+    <line x1="24" y1="50" x2="56" y2="50" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-dasharray="4,3" stroke-linecap="round"/>
+    <!-- Yellow lightning bolt centered on pill -->
+    <path d="M 44 24 L 36 46 L 42 46 L 34 76" fill="none" stroke="#facc15" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Bolt glow -->
+    <path d="M 44 24 L 36 46 L 42 46 L 34 76" fill="none" stroke="#fde047" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity="0.25"/>
+  </g>
+
+  <!-- Floating sparkle particles -->
+  <circle cx="18" cy="22" r="2" fill="#a78bfa" opacity="0.6"/>
+  <circle cx="62" cy="18" r="1.5" fill="#facc15" opacity="0.6"/>
+  <circle cx="65" cy="78" r="2.5" fill="#a78bfa" opacity="0.4"/>
+  <circle cx="14" cy="70" r="1.5" fill="#facc15" opacity="0.5"/>
+  <path d="M 58 32 L 59 34 L 61 34.5 L 59.5 36 L 60 38 L 58 37 L 56 38 L 56.5 36 L 55 34.5 L 57 34 Z" fill="#facc15" opacity="0.5"/>
+
+  <!-- Catchphrase as single line with Dose emphasized -->
+  <text x="82" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-size="18" font-weight="500" fill="#0f172a">
+    <tspan>Tech Marketing </tspan><tspan font-weight="800" font-size="22" fill="#e94560">Dose</tspan>
+  </text>
+  <text x="82" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-size="13" font-weight="500" fill="#94a3b8" letter-spacing="0.5">for AI News</text>
+</svg>

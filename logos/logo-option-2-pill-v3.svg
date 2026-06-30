@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 100" width="420" height="100">
+  <defs>
+    <linearGradient id="pillTopV3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff8fa3"/>
+      <stop offset="100%" style="stop-color:#e94560"/>
+    </linearGradient>
+    <linearGradient id="pillBottomV3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="accentV3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff8fa3"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Bouncy pill - rounder, more tilted, bigger personality -->
+  <g transform="rotate(-20, 40, 50)">
+    <!-- Pill body - extra round proportions -->
+    <rect x="22" y="14" width="36" height="36" rx="18" ry="18" fill="url(#pillTopV3)"/>
+    <rect x="22" y="32" width="36" height="20" fill="url(#pillTopV3)"/>
+    <rect x="22" y="50" width="36" height="20" fill="url(#pillBottomV3)"/>
+    <rect x="22" y="50" width="36" height="36" rx="18" ry="18" fill="url(#pillBottomV3)"/>
+    <!-- Fun divider - dashed for playfulness -->
+    <line x1="24" y1="50" x2="56" y2="50" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-dasharray="4,3" stroke-linecap="round"/>
+    <!-- Cute sparkle/star on top half -->
+    <path d="M 40 30 L 41.5 34 L 46 35 L 42 37.5 L 43 42 L 40 39 L 37 42 L 38 37.5 L 34 35 L 38.5 34 Z" fill="rgba(255,255,255,0.9)"/>
+    <!-- Smiley dots on bottom half - subtle wink -->
+    <circle cx="35" cy="64" r="1.8" fill="rgba(255,255,255,0.85)"/>
+    <circle cx="45" cy="64" r="1.8" fill="rgba(255,255,255,0.85)"/>
+    <path d="M 35 70 Q 40 74 45 70" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Floating sparkle particles around pill -->
+  <circle cx="18" cy="22" r="2" fill="#ff8fa3" opacity="0.6"/>
+  <circle cx="62" cy="18" r="1.5" fill="#a78bfa" opacity="0.5"/>
+  <circle cx="65" cy="78" r="2.5" fill="#ff8fa3" opacity="0.4"/>
+  <circle cx="14" cy="70" r="1.5" fill="#a78bfa" opacity="0.5"/>
+  <!-- Tiny star -->
+  <path d="M 58 32 L 59 34 L 61 34.5 L 59.5 36 L 60 38 L 58 37 L 56 38 L 56.5 36 L 55 34.5 L 57 34 Z" fill="#7c3aed" opacity="0.4"/>
+
+  <!-- Text -->
+  <text x="82" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-size="12.5" font-weight="600" fill="#94a3b8" letter-spacing="3.5">TECH MARKETING</text>
+  <text x="82" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-size="38" font-weight="800" fill="#0f172a" letter-spacing="-1">Dose</text>
+
+  <!-- Playful rounded badge -->
+  <rect x="82" y="80" width="76" height="18" rx="9" fill="url(#accentV3)"/>
+  <text x="94" y="92.5" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-size="9" font-weight="700" fill="white" letter-spacing="1.5">AI NEWS</text>
+</svg>

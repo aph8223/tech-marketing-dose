@@ -332,7 +332,7 @@ def update_html_file(news_html, dose_html, teaser_html):
     html = re.sub(pattern_news, replacement_news, html, count=1, flags=re.DOTALL)
 
     # Update the Daily Dose teaser
-    pattern_teaser = r'(<\!-- Daily Dose Teaser.*?-->)\s*<div class="dose-teaser".*?</div>\s*</a>\s*</div>'
+    pattern_teaser = r'(<\!-- Daily Dose Teaser.*?-->)\s*<div class="dose-teaser".*?</a>\s*</div>'
     replacement_teaser = f'\\1\n{teaser_html}'
     html = re.sub(pattern_teaser, replacement_teaser, html, count=1, flags=re.DOTALL)
 
